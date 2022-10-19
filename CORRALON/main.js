@@ -1,3 +1,20 @@
+const box = document.getElementById("box");
+const p = document.createElement("P");
+const url = "https://criptoya.com/api/dolar";
+function quotegen(){
+  fetch(url)
+    .then(response => {
+      return response.json()
+    })
+    .then(data => {
+    console.log(data);
+    p.innerHTML = 'Dolar oficial a $'+ data.oficial;
+    box.appendChild(p);
+    })
+}
+
+
+
 const mostrarMensaje = () => {
     const nombreCliente = document.getElementById("nombre").value;
     if (nombreCliente.length < 3 ) {
@@ -16,4 +33,11 @@ const mostrarMensaje = () => {
       return false;
     }
     
+
+
+
+
+
+
+
   };

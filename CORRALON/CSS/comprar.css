@@ -124,6 +124,19 @@ h3{
 
 
 
+/* Nota cotizacion */
+
+.nota{
+    background-color: #E4405F;
+    display:flex;
+    flex-direction: column;
+    /* top , right, botton , left */
+    margin: 20px 10px 20px 20px;
+    border-radius: 20px;
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+}
 
 
 
